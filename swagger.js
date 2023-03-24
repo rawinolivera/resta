@@ -4,8 +4,8 @@ const doc = {
     title: "Restaurants",
     description: "Rawin's Restaurant",
   },
-  host: "localhost:8000",
-  schemes: ["http"],
+  host: "restaurant-hykf.onrender.com",
+  schemes: ["https"],
 };
 
 const outputFile = "./swagger.json";

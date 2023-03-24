@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rawinolivera/restaurants.git"
+    "url": "git+https://github.com/rawinolivera/resta.git"
   },
   "author": "Rawin Olivera",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rawinolivera/restaurants/issues"
+    "url": "https://github.com/rawinolivera/resta/issues"
   },
-  "homepage": "https://github.com/rawinolivera/restaurants#readme",
+  "homepage": "https://github.com/rawinolivera/resta#readme",
   "dependencies": {
     "body-parser": "^1.20.2",
     "dotenv": "^16.0.3",
