@@ -1,0 +1,32 @@
+{
+    "meal": {
+      "name": "Stir Fried Beef",
+      "description": "Juicy strips of soy-marinated beef (or alpaca), onions, tomatoes, aji chilies, and other spices are stir-fried until the beef is just cooked and the tomatoes and onions start to form a robust, meaty gravy",
+      "price": "18.00"
+    },
+    "meal1": {
+      "name": "Creamy Chicken",
+      "description": "Shredded chicken bathes in a thick sauce made with cream, ground walnuts, cheese, and aji amarillo",
+      "price": "15.00"
+    },
+    "meal2": {
+      "name": "Potatoes in Spicy Cheese Sauce",
+      "description": "sliced yellow potatoes are drenched in a purée of queso fresco, aji amarillo, garlic, evaporated milk, lime juice and—you guessed it—saltine crackers.",
+      "price": "12.00"
+    },
+    "meal3": {
+      "name": "Potato Casserole",
+      "description": "meaty mashed yellow Peruvian potatoes blended with lime, oil and spicy aji amarillo sauce. Shredded tuna, salmon, or chicken are mixed with mayo, followed by layers of avocado, hardboiled eggs, and olives.",
+      "price": "15.00"
+    },
+    "meal4": {
+      "name": "Stuffed Spicy Peppers",
+      "description": "Red aji rocoto chilies are stuffed with a cooked mix of ground beef, onions, garlic, olives, raisins, herbs, and spices, then topped with queso fresco and baked in an egg-and-milk sauce.",
+      "price": "10.00"
+    },
+    "meal5": {
+      "name": "Ceviche",
+      "description": "sea bass (corvina) marinated for just minutes in lime juice, onion, salt and, of course, hot chiles (aji).",
+      "price": "14"
+    }
+  }

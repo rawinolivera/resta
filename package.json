@@ -1,0 +1,33 @@
+{
+  "name": "restaurants",
+  "version": "1.0.0",
+  "description": "Second project CSE341 L05",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "swagger": "node ./swagger.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rawinolivera/restaurants.git"
+  },
+  "author": "Rawin Olivera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rawinolivera/restaurants/issues"
+  },
+  "homepage": "https://github.com/rawinolivera/restaurants#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongodb": "^5.1.0",
+    "swagger": "^0.7.5",
+    "swagger-autogen": "^2.23.1",
+    "swagger-ui-express": "^4.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "customer": {
+      "firstName": "Mile",
+      "lastName": "Torres",
+      "email": "milexa.torres@gmail.com",
+      "phoneNumber": "+51 923795254",
+      "favoriteMeal": "Salads",
+      "birthday": "01/16/1993",
+      "paymentMethod": "cash"
+    },
+    "customer2": {
+      "firstName": "Rawin",
+      "lastName": "Olivera",
+      "email": "rawin.olivera@gmail.com",
+      "phoneNumber": "+51 993756564",
+      "favoriteMeal": "Pasta",
+      "birthday": "05/17/1990",
+      "paymentMethod": "tdc"
+    },
+    "customer3": {
+      "firstName": "Yanitza",
+      "lastName": "Torbello",
+      "email": "yanitza.torbello@gmail.com",
+      "phoneNumber": "+58 4148327658",
+      "favoriteMeal": "Salads",
+      "birthday": "12/10/1970",
+      "paymentMethod": "cash"
+    }
+  }
