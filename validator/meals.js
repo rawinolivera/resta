@@ -1,5 +1,5 @@
 const { check } = require('express-validator') //TODO <---
-const { validateResult } = require('../validator/validateHelper')
+const { validateResult } = require('../helper/validateHelper')
 
 const validateCreate = [ //TODO:name, age, email
     check('name')

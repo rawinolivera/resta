@@ -6,14 +6,28 @@ Content-Type: application/json
 GET http://localhost:8000/meals/
 
 ###
-GET http://localhost:8000/customers/
-
-###
-PUT http://localhost:8000/meals/641c84767d92d5c1e22a3074
+POST http://localhost:8000/customers/
 Content-Type: application/json
 
 {
-    "name": "Stir Fried Beef",
-    "description": "Juicy strips of soy-marinated beef (or alpaca), onions, tomatoes, aji chilies, and other spices are stir-fried until the beef is just cooked and the tomatoes and onions start to form a robust, meaty gravy",
-    "price": "30.00"
+  "firstName": "Anthony",
+  "lastName": "Jackson",
+  "email": "aj@gmail.com",
+  "phoneNumber": "41414141",
+  "favoriteMeal": "any",
+  "birthday": "05/17/2000",
+  "paymentMethod": "any"
 }
+
+###
+PUT http://localhost:8000/meals/642f9b0b9d38f8349970efb2
+Content-Type: application/json
+
+{
+    "name": "Especial Salad",
+    "description": "it's the result of the greatest selected vegetables",
+    "price": "35.00"
+}
+
+###
+DELETE http://localhost:8000/meals/642fbeaeaa9f1541e519929e

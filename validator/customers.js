@@ -1,5 +1,5 @@
 const { check } = require('express-validator') //TODO <---
-const { validateResult } = require('../validator/validateHelper')
+const { validateResult } = require('../helper/validateHelper')
 
 const validateCreate = [ //TODO:name, age, email
     check('firstName')
@@ -21,7 +21,8 @@ const validateCreate = [ //TODO:name, age, email
         .isNumeric(),
     check('birthday')
         .exists()
-        .isDate(),
+        .not()
+        .isEmpty(),
     (req, res, next) => {
         validateResult(req, res, next)
     }
