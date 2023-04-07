@@ -12,9 +12,9 @@ const getAll = async (req, res, next) => {
 
 //get request for single (READ)
 const getSingle = async (req, res, next) => {
-    const userId = new ObjectId(req.params.id);
+    const customerId = new ObjectId(req.params.id);
     const result = await mongodb
-      .getDb().db('restaurants').collection('customers').find({ _id: userId });
+      .getDb().db('restaurants').collection('customers').find({ _id: customerId });
     result.toArray().then((lists) => {
       res.setHeader('Content-Type', 'application/json');
       res.status(200).json(lists[0]);
@@ -23,54 +23,54 @@ const getSingle = async (req, res, next) => {
 
   // post request )(CREATE)
 const newCust = async (req, res, next) => {
-    const contact = {
+    const customer = {
       firstName: req.body.firstName,
       lastName: req.body.lastName,
       email: req.body.email,
-      lastName: req.body.lastName,
+      phoneNumber: req.body.phoneNumber,
       favoriteMeal: req.body.favoriteMeal,
       birthday: req.body.birthday,
       paymentMethod: req.body.paymentMethod
     };
     const response = await mongodb
-      .getDb().db('restaurants').collection('customers').insertOne(contact);
+      .getDb().db('restaurants').collection('customers').insertOne(customer);
     if(response.acknowledged){
       res.status(201).json(response);
     } else {
-      res.status(500).json(response.error || "Error, contact not created");
+      res.status(500).json(response.error || "Error, customer not created");
     }
   };
 
   //put request (update)
 const updateCust = async (req, res, next) => {
-    const contactId = new ObjectId(req.params.id);
-    const contact = {
+    const customerId = new ObjectId(req.params.id);
+    const customer = {
       firstName: req.body.firstName,
       lastName: req.body.lastName,
       email: req.body.email,
-      lastName: req.body.lastName,
+      phoneNumber: req.body.phoneNumber,
       favoriteMeal: req.body.favoriteMeal,
       birthday: req.body.birthday,
       paymentMethod: req.body.paymentMethod
     };
     const response = await mongodb
-      .getDb().db('restaurants').collection('customers').replaceOne({ _id: contactId }, contact);
+      .getDb().db('restaurants').collection('customers').replaceOne({ _id: customerId }, customer);
     if(response.acknowledged){
       res.status(204).json(response);
     } else {
-      res.status(500).json(response.error || "Error, contact not updated");
+      res.status(500).json(response.error || "Error, customer not updated");
     }
   };
 
   //delete request (DELETE)
 const deleteCust = async (req, res, next) => {
-    const contactId = new ObjectId(req.params.id);
+    const customerId = new ObjectId(req.params.id);
     const response = await mongodb
-      .getDb().db('restaurants').collection('customers').deleteOne({ _id: contactId }, true);
+      .getDb().db('restaurants').collection('customers').deleteOne({ _id: customerId }, true);
     if(response.acknowledged){
       res.status(200).json(response);
     } else {
-      res.status(500).json(response.error || "Error, contact not deleted");
+      res.status(500).json(response.error || "Error, customer not deleted");
     }
   }
 

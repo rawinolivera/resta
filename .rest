@@ -1,11 +1,19 @@
-POST http://localhost:8000/meals
+POST http://localhost:8000/customers
+Content-Type: application/json
+
+
+###
+GET http://localhost:8000/meals/
+
+###
+GET http://localhost:8000/customers/
+
+###
+PUT http://localhost:8000/meals/641c84767d92d5c1e22a3074
 Content-Type: application/json
 
 {
     "name": "Stir Fried Beef",
     "description": "Juicy strips of soy-marinated beef (or alpaca), onions, tomatoes, aji chilies, and other spices are stir-fried until the beef is just cooked and the tomatoes and onions start to form a robust, meaty gravy",
-    "price": "18.00"
+    "price": "30.00"
 }
-
-###
-GET http://localhost:8000/meals/
